@@ -27,7 +27,6 @@
         
         .dropdown:hover .dropdown-menu { display: block; }
 
-        /* Bảng chuẩn phong cách SGS */
         .sgs-table th { background-color: var(--sgs-dark); color: white; padding: 12px; text-align: center; border: 1px solid #4a5568; }
         .sgs-table td { padding: 12px; border: 1px solid #e2e8f0; color: #4a5568; }
         .sgs-table tr:nth-child(even) { background-color: #f7fafc; }
@@ -64,7 +63,7 @@
                         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </button>
                     <div class="dropdown-menu hidden absolute top-full left-1/2 transform -translate-x-1/2 mt-0 w-[600px] bg-white border-t-4 border-sgs-orange shadow-xl p-6 grid grid-cols-2 gap-4 z-50">
-                        <a href="#" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100">Ventilated Bulk Bag</a>
+                        <a href="#" onclick="showPage('ventilated')" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100 nav-link">Ventilated Bulk Bag</a>
                         <a href="#" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100">Dustproof Bulk Bag</a>
                         <a href="#" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100">UN Certified Bag</a>
                         <a href="#" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100">Weather Bulk Bag</a>
@@ -88,6 +87,7 @@
         <div id="page-home">
             <section class="relative bg-gray-900 h-[500px] flex items-center">
                 <div class="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1587293852726-70cdb56c2866?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center"></div>
+                
                 <div class="container mx-auto px-6 relative z-10">
                     <div class="bg-white/95 p-8 md:p-12 max-w-2xl shadow-lg border-l-8 border-sgs-orange">
                         <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">Giải pháp Bao bì FIBC Chất lượng Toàn cầu</h1>
@@ -108,7 +108,7 @@
                         <div class="service-card bg-white p-6 shadow-sm border border-gray-100">
                             <h3 class="text-xl font-bold text-gray-800 mb-3">Ventilated Bulk Bag</h3>
                             <p class="text-gray-600 text-sm mb-4">Bao thông hơi chuyên dụng cho nông sản, giúp sản phẩm hô hấp và tránh ẩm mốc.</p>
-                            <a href="#" class="text-sgs-orange font-semibold text-sm hover:underline">Tìm hiểu thêm →</a>
+                            <a href="#" onclick="showPage('ventilated')" class="text-sgs-orange font-semibold text-sm hover:underline">Tìm hiểu thêm →</a>
                         </div>
 
                         <div class="service-card bg-white p-6 shadow-sm border border-gray-100">
@@ -168,14 +168,13 @@
 
             <section class="py-12 bg-white">
                 <div class="container mx-auto px-6 max-w-6xl">
-                    
                     <div class="flex flex-col md:flex-row gap-12 mb-16">
                         <div class="w-full md:w-1/2">
                             <div class="border border-gray-200 p-2 mb-4 bg-white shadow-sm flex justify-center h-[400px]">
                                 <img id="main-product-image" src="https://fibcvn.com/wp-content/uploads/2022/09/Classification3.jpg" alt="Classification Main" class="object-contain h-full w-full">
                             </div>
                             <div class="grid grid-cols-4 gap-4">
-                                <img src="https://fibcvn.com/wp-content/uploads/2022/09/Classification3.jpg" onclick="changeImage(this.src)" class="thumbnail active border-gray-200 p-1 bg-white h-24 w-full object-cover">
+                                <img src="https://fibcvn.com/wp-content/uploads/2022/09/Classification3.jpg" onclick="changeImage(this.src)" class="thumbnail active border-gray-200 p-1 bg-white h-24 w-full object-cover border-sgs-orange">
                                 <img src="https://fibcvn.com/wp-content/uploads/2022/09/Classification2.jpg" onclick="changeImage(this.src)" class="thumbnail border-gray-200 p-1 bg-white h-24 w-full object-cover">
                                 <img src="https://fibcvn.com/wp-content/uploads/2022/09/Classification1.jpg" onclick="changeImage(this.src)" class="thumbnail border-gray-200 p-1 bg-white h-24 w-full object-cover">
                                 <img src="https://fibcvn.com/wp-content/uploads/2022/09/Classification0.jpg" onclick="changeImage(this.src)" class="thumbnail border-gray-200 p-1 bg-white h-24 w-full object-cover">
@@ -365,7 +364,7 @@
                                         <img src="https://fibcvn.com/wp-content/uploads/2022/09/Ventilated-Bulk-Bag4.jpg" alt="Ventilated Bulk Bag" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
                                     </div>
                                     <h4 class="text-lg font-bold text-gray-800 mb-2">Ventilated Bulk Bag</h4>
-                                    <a href="#" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                    <a href="#" onclick="showPage('ventilated')" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
                                 </div>
 
                             </div>
@@ -374,9 +373,154 @@
                 </div>
             </section>
         </div>
+
+        <div id="page-ventilated" class="hidden">
+            <div class="bg-gray-100 py-3 border-b border-gray-200">
+                <div class="container mx-auto px-6 text-sm text-gray-500">
+                    <a href="#" onclick="showPage('home')" class="hover:text-sgs-orange">Home</a> / 
+                    <a href="#" class="hover:text-sgs-orange">Product</a> / 
+                    <span class="text-gray-800 font-semibold">Ventilated Bulk Bag</span>
+                </div>
+            </div>
+
+            <section class="py-12 bg-white">
+                <div class="container mx-auto px-6 max-w-6xl">
+                    
+                    <div class="flex flex-col md:flex-row gap-12 mb-16">
+                        <div class="w-full md:w-1/2">
+                            <div class="border border-gray-200 p-2 mb-4 bg-white shadow-sm flex justify-center h-[400px]">
+                                <img id="main-ventilated-image" src="https://fibcvn.com/wp-content/uploads/2022/09/Ventilated-Bulk-Bag4.jpg" alt="Ventilated Bulk Bag" class="object-contain h-full w-full">
+                            </div>
+                            <div class="grid grid-cols-4 gap-4">
+                                <img src="https://fibcvn.com/wp-content/uploads/2022/09/Ventilated-Bulk-Bag4.jpg" onclick="changeImageVent(this.src)" class="thumb-vent active border-gray-200 p-1 bg-white h-24 w-full object-cover border-sgs-orange">
+                                <img src="https://fibcvn.com/wp-content/uploads/2022/09/Ventilated-Bulk-Bag0.jpg" onclick="changeImageVent(this.src)" class="thumb-vent border-gray-200 p-1 bg-white h-24 w-full object-cover">
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-1/2">
+                            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Ventilated Bulk Bag</h1>
+                            <div class="h-1 w-16 bg-sgs-orange mb-6"></div>
+                            
+                            <p class="text-gray-600 mb-6 leading-relaxed">Bao thông hơi (Ventilated Bag) chuyên dụng để bảo quản khoai tây, hành tây hoặc các loại nông sản khác cần luồng không khí lưu thông để tránh nấm mốc.</p>
+
+                            <ul class="list-none space-y-3 mb-8 text-gray-800 font-medium bg-gray-50 p-6 rounded border-l-4 border-sgs-orange">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-sgs-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Vải dệt thưa tối đa hóa luồng không khí, ngăn nấm mốc.</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-sgs-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Giải pháp lý tưởng cho việc thoát nước (dewatering).</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-sgs-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Safe Working Load: 500KG ~ 2000KG</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-sgs-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Safety Factor: 5:1 or 6:1</li>
+                            </ul>
+
+                            <a href="#" class="bg-sgs-orange hover-bg-sgs-orange text-white px-8 py-3 rounded font-bold transition inline-block mb-4 shadow-md">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-10">
+                        <div class="flex space-x-8 mb-8 border-b border-gray-200">
+                            <h2 class="text-xl font-bold text-sgs-orange border-b-2 border-sgs-orange pb-2">Description</h2>
+                        </div>
+
+                        <div class="space-y-6 mb-16 text-gray-700">
+                            <p class="leading-relaxed">At the moment, we also supply <strong>Ventilated bags</strong> for storing potato, onion or other agricultural products that need airflow; and a range of polypropylene nets and textile made by our manufacturer.</p>
+                            <p class="leading-relaxed">The vented fabric is newly developed by <strong>FiBC Vietnam</strong> to prevent mould growth by maximizing airflow and is a great idea for dewatering. Basically, the same fabric as normal bulk bags but has a different weave to allow air to flow and faster drainage.</p>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 border-b-2 border-sgs-orange pb-2 inline-block">SPECIFICATION</h3>
+                        <div class="overflow-x-auto shadow-sm border border-gray-200 rounded mb-12">
+                            <table class="w-full sgs-table text-sm text-left">
+                                <tbody>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Construction</td><td>4 Panel/ U Panel/ Circular/ Tubular</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Dimension</td><td>Custom design to suit your product</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Colour</td><td>White or as required</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Laminated/ Unlaminated</td><td>Outside/ Inside</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Safe Working Load</td><td>500KG ~ 2000KG</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Safety Factor</td><td>5:1 or 6:1</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Type</td><td>Single use/ Multi use/ UN Certified</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Lifting Belt</td><td>Cross corner, Seamside and others</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Filling/ Emptying</td><td>Custom requirements</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Printing</td><td>One or four colours available</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Other requirements</td><td>Document Pocket/ Dustproof/ B-lock/…</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="mt-16 pt-12 border-t-2 border-gray-100">
+                            <h3 class="text-3xl font-bold text-gray-900 mb-10 text-center">Related products</h3>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/09/Classification3.jpg" alt="Classification" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Classification</h4>
+                                    <a href="#" onclick="showPage('classification')" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/09/UN-Certified-Bag.jpg" alt="UN Certified Bag" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">UN Certified Bag</h4>
+                                    <a href="#" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/09/Sling-Bag0.jpg" alt="Sling Bag" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Sling Bag</h4>
+                                    <a href="#" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/09/Dustproof-Bulk-Bag0.jpg" alt="Dustproof Bulk Bag" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Dustproof Bulk Bag</h4>
+                                    <a href="#" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/10/Dewatering-Bag0.jpg" alt="Dewatering Bag" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Dewatering Bag</h4>
+                                    <a href="#" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/09/Foodgrade-Bag0-1.jpg" alt="Foodgrade Bag" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Foodgrade Bag</h4>
+                                    <a href="#" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/09/baffle-liner.jpg" alt="Baffle Liner" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Baffle Liner</h4>
+                                    <a href="#" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2023/03/Net-Baffle1.jpg" alt="Net Baffle" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Net Baffle</h4>
+                                    <a href="#" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="bg-[#1a202c] text-gray-400 py-12 border-t-4 border-sgs-orange mt-12">
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t-4 border-sgs-orange mt-12">
         <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
                 <a href="#" class="text-2xl font-bold text-white mb-4 block">FIBC<span class="text-sgs-orange">VN</span></a>
@@ -404,6 +548,7 @@
             // Ẩn tất cả các trang
             document.getElementById('page-home').classList.add('hidden');
             document.getElementById('page-classification').classList.add('hidden');
+            document.getElementById('page-ventilated').classList.add('hidden');
             
             // Hiện trang được chọn
             document.getElementById('page-' + pageId).classList.remove('hidden');
@@ -424,6 +569,19 @@
         function changeImage(src) {
             document.getElementById('main-product-image').src = src;
             let thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => {
+                thumb.classList.remove('active');
+                thumb.style.borderColor = 'transparent';
+                if(thumb.src === src) {
+                    thumb.classList.add('active');
+                    thumb.style.borderColor = '#f05a22';
+                }
+            });
+        }
+
+        function changeImageVent(src) {
+            document.getElementById('main-ventilated-image').src = src;
+            let thumbnails = document.querySelectorAll('.thumb-vent');
             thumbnails.forEach(thumb => {
                 thumb.classList.remove('active');
                 thumb.style.borderColor = 'transparent';
