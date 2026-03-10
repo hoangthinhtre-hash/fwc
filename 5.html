@@ -66,7 +66,7 @@
                         <a href="#" onclick="showPage('ventilated')" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100 nav-link">Ventilated Bulk Bag</a>
                         <a href="#" onclick="showPage('dustproof')" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100 nav-link">Dustproof Bulk Bag</a>
                         <a href="#" onclick="showPage('uncertified')" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100 nav-link">UN Certified Bag</a>
-                        <a href="#" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100">Weather Bulk Bag</a>
+                        <a href="#" onclick="showPage('weather')" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100 nav-link">Weather Bulk Bag</a>
                         <a href="#" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100">Foodgrade Bag</a>
                         <a href="#" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100">Sling Bag</a>
                         <a href="#" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100">Dewatering Bag</a>
@@ -126,7 +126,7 @@
                         <div class="service-card bg-white p-6 shadow-sm border border-gray-100">
                             <h3 class="text-xl font-bold text-gray-800 mb-3">Weather Bulk Bag</h3>
                             <p class="text-gray-600 text-sm mb-4">Chịu được điều kiện thời tiết khắc nghiệt, chống tia UV và chống thấm nước.</p>
-                            <a href="#" class="text-sgs-orange font-semibold text-sm hover:underline">Tìm hiểu thêm →</a>
+                            <a href="#" onclick="showPage('weather')" class="text-sgs-orange font-semibold text-sm hover:underline">Tìm hiểu thêm →</a>
                         </div>
 
                         <div class="service-card bg-white p-6 shadow-sm border border-gray-100">
@@ -745,6 +745,120 @@
                 </div>
             </section>
         </div>
+<div id="page-weather" class="hidden">
+            <div class="bg-gray-100 py-3 border-b border-gray-200">
+                <div class="container mx-auto px-6 text-sm text-gray-500">
+                    <a href="#" onclick="showPage('home')" class="hover:text-sgs-orange">Home</a> / 
+                    <a href="#" class="hover:text-sgs-orange">Product</a> / 
+                    <span class="text-gray-800 font-semibold">Weather Bulk Bag</span>
+                </div>
+            </div>
+
+            <section class="py-12 bg-white">
+                <div class="container mx-auto px-6 max-w-6xl">
+                    
+                    <div class="flex flex-col md:flex-row gap-12 mb-16">
+                        <div class="w-full md:w-1/2">
+                            <div class="border border-gray-200 p-2 mb-4 bg-white shadow-sm flex justify-center h-[400px]">
+                                <img id="main-weather-image" src="https://fibcvn.com/wp-content/uploads/2022/09/Classification3.jpg" alt="Weather Bulk Bag" class="object-contain h-full w-full grayscale contrast-125">
+                            </div>
+                            <div class="grid grid-cols-4 gap-4">
+                                <img src="https://fibcvn.com/wp-content/uploads/2022/09/Classification3.jpg" onclick="changeImageWeather(this.src)" class="thumb-weather active border-gray-200 p-1 bg-white h-24 w-full object-cover border-sgs-orange grayscale contrast-125">
+                                <img src="https://fibcvn.com/wp-content/uploads/2022/09/Classification2.jpg" onclick="changeImageWeather(this.src)" class="thumb-weather border-gray-200 p-1 bg-white h-24 w-full object-cover grayscale contrast-125">
+                            </div>
+                        </div>
+
+                        <div class="w-full md:w-1/2">
+                            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Weather Bulk Bag</h1>
+                            <div class="h-1 w-16 bg-sgs-orange mb-6"></div>
+                            
+                            <p class="text-gray-600 mb-6 leading-relaxed">Được thiết kế đặc biệt để chịu được các điều kiện thời tiết khắc nghiệt ngoài trời với mức độ chống tia UV cao, bền bỉ và có tuổi thọ lâu dài.</p>
+
+                            <ul class="list-none space-y-3 mb-8 text-gray-800 font-medium bg-gray-50 p-6 rounded border-l-4 border-sgs-orange">
+                                <li class="flex items-center"><svg class="w-5 h-5 text-sgs-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Kháng thời tiết (Weather Resistance): 2 năm, 3 năm, 5 năm.</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-sgs-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Tuổi thọ lưu trữ ngoài trời có thể lên đến 8 năm.</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-sgs-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Màu sắc đặc trưng: Màu Đen (Black) chịu lực.</li>
+                                <li class="flex items-center"><svg class="w-5 h-5 text-sgs-orange mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Lý tưởng làm: túi xây dựng, túi đựng củi, túi lưu trữ 1 tấn.</li>
+                            </ul>
+
+                            <a href="#" class="bg-sgs-orange hover-bg-sgs-orange text-white px-8 py-3 rounded font-bold transition inline-block mb-4 shadow-md">Request Quote</a>
+                        </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-10">
+                        <div class="flex space-x-8 mb-8 border-b border-gray-200">
+                            <h2 class="text-xl font-bold text-sgs-orange border-b-2 border-sgs-orange pb-2">Description</h2>
+                        </div>
+
+                        <div class="space-y-6 mb-16 text-gray-700">
+                            <p class="leading-relaxed">In general, it's not recommended to use a bulk bag outside, but in <strong>FiBC Vietnam</strong> we have an alternative that we call Weather bulk bag, which is designed to resist weather conditions with high UV and can stand up to 8 years. These bags have strength, better durability and a long lifetime as compared to normal bulk bags.</p>
+                            <p class="leading-relaxed">In order to maintain the safety of FiBCs as well as the longer storage time, please advise us your usage purpose and requirement.</p>
+                            <p class="leading-relaxed">Furthermore, our normal Black fabric is excellent in quality, heavy-duty and inexpensive industrial grade. A Black bulk bag is ideal for builders' bags, firewood bags, storage bags or for a 1-tonne bag.</p>
+                        </div>
+
+                        <h3 class="text-2xl font-bold text-gray-900 mt-12 mb-6 border-b-2 border-sgs-orange pb-2 inline-block">SPECIFICATION</h3>
+                        <div class="overflow-x-auto shadow-sm border border-gray-200 rounded mb-12">
+                            <table class="w-full sgs-table text-sm text-left">
+                                <tbody>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800 text-sgs-orange">Weather Resistance</td><td class="font-bold">2 years, 3 years, 5 years</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Construction</td><td>4 Panel/ U Panel/ Circular/ Tubular</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Dimension</td><td>Custom design to suit your product</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800 text-sgs-orange">Colour</td><td class="font-bold">Black</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Laminated/ Unlaminated</td><td>Outside/ Inside</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Safe Working Load</td><td>500KG ~ 2000KG</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Safety Factor</td><td>5:1 or 6:1</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Type</td><td>Single use/ Multi use/ UN Certified</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Lifting Belt</td><td>Cross corner, Seamside and others</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Filling/ Emptying</td><td>Custom requirements</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Printing</td><td>One or four colours available</td></tr>
+                                    <tr><td class="font-bold w-1/3 bg-gray-50 text-gray-800">Other requirements</td><td>Document Pocket/ Dustproof/ B-lock/…</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="mt-16 pt-12 border-t-2 border-gray-100">
+                            <h3 class="text-3xl font-bold text-gray-900 mb-10 text-center">Related products</h3>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                                
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/09/Classification3.jpg" alt="Classification" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Classification</h4>
+                                    <a href="#" onclick="showPage('classification')" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/09/Ventilated-Bulk-Bag4.jpg" alt="Ventilated Bulk Bag" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Ventilated Bulk Bag</h4>
+                                    <a href="#" onclick="showPage('ventilated')" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/09/Dustproof-Bulk-Bag0.jpg" alt="Dustproof Bulk Bag" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">Dustproof Bulk Bag</h4>
+                                    <a href="#" onclick="showPage('dustproof')" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                                <div class="service-card bg-white p-4 shadow-sm border border-gray-100 group text-center rounded">
+                                    <div class="overflow-hidden mb-4 h-48 flex items-center justify-center bg-white">
+                                        <img src="https://fibcvn.com/wp-content/uploads/2022/09/UN-Certified-Bag.jpg" alt="UN Certified Bag" class="object-contain h-full w-full group-hover:scale-105 transition duration-300">
+                                    </div>
+                                    <h4 class="text-lg font-bold text-gray-800 mb-2">UN Certified Bag</h4>
+                                    <a href="#" onclick="showPage('uncertified')" class="text-sgs-orange font-semibold text-sm hover:underline">Quick View</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="bg-gray-900 text-gray-400 py-12 border-t-4 border-sgs-orange mt-12">
@@ -778,7 +892,8 @@
             document.getElementById('page-ventilated').classList.add('hidden');
             document.getElementById('page-dustproof').classList.add('hidden');
            document.getElementById('page-uncertified').classList.add('hidden');
-            // Hiện trang được chọn
+           document.getElementById('page-weather').classList.add('hidden');
+ // Hiện trang được chọn
             document.getElementById('page-' + pageId).classList.remove('hidden');
             
             // Cuộn lên đầu
@@ -834,6 +949,18 @@ function changeImageDustproof(src) {
 function changeImageUn(src) {
             document.getElementById('main-un-image').src = src;
             let thumbnails = document.querySelectorAll('.thumb-un');
+            thumbnails.forEach(thumb => {
+                thumb.classList.remove('active');
+                thumb.style.borderColor = 'transparent';
+                if(thumb.src === src) {
+                    thumb.classList.add('active');
+                    thumb.style.borderColor = '#f05a22';
+                }
+            });
+        }
+function changeImageWeather(src) {
+            document.getElementById('main-weather-image').src = src;
+            let thumbnails = document.querySelectorAll('.thumb-weather');
             thumbnails.forEach(thumb => {
                 thumb.classList.remove('active');
                 thumb.style.borderColor = 'transparent';
