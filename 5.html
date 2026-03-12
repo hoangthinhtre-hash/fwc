@@ -2891,6 +2891,10 @@
           document.getElementById('page-foodgrade').classList.add('hidden');
           document.getElementById('page-sling').classList.add('hidden');
           document.getElementById('page-dewatering').classList.add('hidden');
+         document.getElementById('page-baffle').classList.add('hidden');
+         document.getElementById('page-qbag').classList.add('hidden');
+         document.getElementById('page-netbaffle').classList.add('hidden');
+
           // Chuẩn bị cho các trang sắp tới (tránh lỗi Javascript nếu thẻ ID chưa tồn tại)
           if(document.getElementById('page-baffle')) document.getElementById('page-baffle').classList.add('hidden');
           if(document.getElementById('page-qbag')) document.getElementById('page-qbag').classList.add('hidden');
@@ -2900,9 +2904,12 @@
            // Kiểm tra xem ID trang có tồn tại không trước khi hiển thị (phòng trường hợp click vào nút của trang chưa tạo)
            if (document.getElementById('page-' + pageId)) {
                document.getElementById('page-' + pageId).classList.remove('hidden');
-// THÊM DÒNG NÀY ĐỂ ĐÁNH THỨC THANH TRƯỢT KHI MỞ TRANG window.dispatchEvent(new Event('resize'));
-           }
-            
+               
+               // Đánh thức tất cả các thanh trượt khi chuyển trang
+               setTimeout(() => {
+                   window.dispatchEvent(new Event('resize'));
+               }, 100);
+           }            
             // Cuộn lên đầu
            window.scrollTo({ top: 0, behavior: 'smooth' });
             
