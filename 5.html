@@ -76,7 +76,17 @@
                    </div>
           
               </div>
-              
+              <div class="relative dropdown py-2">
+  <button class="hover:text-sgs-orange flex items-center transition">
+    Service 
+     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+     </button>
+     <div class="dropdown-menu hidden absolute top-full left-1/2 transform -translate-x-1/2 mt-0 w-64 bg-white border-t-4 border-sgs-orange shadow-xl p-4 flex flex-col gap-1 z-50">
+      <a href="#" onclick="showPage('certification')" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100 nav-link">Certification</a>
+      <a href="#" onclick="showPage('quality-audits')" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100 nav-link">Quality Audits</a>
+      <a href="#" onclick="showPage('supply-chain')" class="hover:text-sgs-orange hover:bg-gray-50 p-2 block border-b border-gray-100 nav-link">Supply Chain Assurance</a>
+       </div>
+     </div>
               <a href="#" onclick="showPage('contact')" class="hover:text-sgs-orange transition nav-link">CONTACT</a>
 
                 <a href="#" class="bg-sgs-orange hover-bg-sgs-orange text-white px-6 py-2 rounded font-semibold transition">Nhận Báo Giá</a>
@@ -2962,6 +2972,192 @@
                </div>
            </section>
         </div>
+<div id="page-certification" class="hidden">
+            <div class="bg-gray-100 py-3 border-b border-gray-200">
+               <div class="container mx-auto px-6 text-sm text-gray-500">
+                   <a href="#" onclick="showPage('home')" class="hover:text-sgs-orange">Home</a> / 
+                   <span class="text-gray-800">Service</span> / 
+                   <span class="text-gray-800 font-semibold">Certification</span>
+               </div>
+           </div>
+
+           <section class="py-16 bg-white">
+               <div class="container mx-auto px-6 max-w-6xl">
+                    <div class="flex flex-col md:flex-row gap-12 mb-20 items-center">
+                       <div class="w-full md:w-1/2">
+                           <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Certification and Audit</h1>
+                           <div class="h-1 w-20 bg-sgs-orange mb-6"></div>
+                           <p class="text-gray-800 font-medium mb-6 leading-relaxed text-xl">
+                               Demonstrate that your products, processes, systems or services are compliant with national and international regulations and standards.
+                           </p>
+                           <p class="text-gray-600 mb-8 leading-relaxed">
+                               We provide comprehensive certification and audit services to help you ensure compliance, improve performance, and reduce risk across your entire supply chain. Our global network of experts delivers tailored solutions to meet the specific needs of your industry.
+                           </p>
+                           <a href="#" onclick="showPage('contact')" class="bg-sgs-orange hover-bg-sgs-orange text-white px-8 py-3 rounded font-bold transition inline-block shadow-md">Request a Quote</a>
+                       </div>
+                       <div class="w-full md:w-1/2">
+                           <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1000&auto=format&fit=crop" alt="Certification Services" class="w-full h-[450px] object-cover rounded shadow-lg border border-gray-100">
+                       </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-16">
+                        <div class="text-center mb-12">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Services</h2>
+                            <p class="text-gray-600 max-w-2xl mx-auto">Explore our wide range of services tailored to ensure your management systems meet the highest global standards.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div onclick="showPage('certification')" class="bg-gray-50 border border-gray-100 p-8 rounded hover:shadow-lg hover:border-sgs-orange transition group cursor-pointer flex flex-col items-center text-center">
+                                <div class="w-16 h-16 bg-white border border-gray-200 text-sgs-orange flex items-center justify-center rounded-full mb-6 group-hover:bg-sgs-orange group-hover:text-white group-hover:border-transparent transition shadow-sm">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-sgs-orange transition">Certification</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Demonstrate that your products, processes, systems or services are compliant with national and international regulations and standards.</p>
+                            </div>
+                            
+                            <div onclick="showPage('quality-audits')" class="bg-gray-50 border border-gray-100 p-8 rounded hover:shadow-lg hover:border-sgs-orange transition group cursor-pointer flex flex-col items-center text-center">
+                                <div class="w-16 h-16 bg-white border border-gray-200 text-sgs-orange flex items-center justify-center rounded-full mb-6 group-hover:bg-sgs-orange group-hover:text-white group-hover:border-transparent transition shadow-sm">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-sgs-orange transition">Quality Audits</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Ensure your operations meet rigorous quality standards through our comprehensive and independent auditing solutions.</p>
+                            </div>
+                            
+                            <div onclick="showPage('supply-chain')" class="bg-gray-50 border border-gray-100 p-8 rounded hover:shadow-lg hover:border-sgs-orange transition group cursor-pointer flex flex-col items-center text-center">
+                                <div class="w-16 h-16 bg-white border border-gray-200 text-sgs-orange flex items-center justify-center rounded-full mb-6 group-hover:bg-sgs-orange group-hover:text-white group-hover:border-transparent transition shadow-sm">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-sgs-orange transition">Supply Chain Assurance</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Mitigate risk, enhance transparency, and build resilience across your entire supply chain with our assurance programs.</p>
+                            </div>
+                        </div>
+           </section>
+        </div>
+<div id="page-quality-audits" class="hidden">
+            <div class="bg-gray-100 py-3 border-b border-gray-200">
+               <div class="container mx-auto px-6 text-sm text-gray-500">
+                   <a href="#" onclick="showPage('home')" class="hover:text-sgs-orange">Home</a> / 
+                   <span class="text-gray-800">Service</span> / 
+                   <span class="text-gray-800 font-semibold">Quality Audits</span>
+               </div>
+           </div>
+
+           <section class="py-16 bg-white">
+               <div class="container mx-auto px-6 max-w-6xl">
+                    <div class="flex flex-col md:flex-row gap-12 mb-20 items-center">
+                       <div class="w-full md:w-1/2">
+                           <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Quality Audits</h1>
+                           <div class="h-1 w-20 bg-sgs-orange mb-6"></div>
+                           <p class="text-gray-800 font-medium mb-6 leading-relaxed text-xl">
+                               Ensure your operations and supply chain meet the highest standards of quality, safety, and compliance.
+                           </p>
+                           <p class="text-gray-600 mb-8 leading-relaxed">
+                               Our comprehensive quality audit services help you identify areas for improvement, mitigate risks, and ensure that your processes align with industry regulations. With a global network of experienced auditors, we provide independent, objective assessments to protect your brand and enhance operational efficiency.
+                           </p>
+                           <a href="#" onclick="showPage('contact')" class="bg-sgs-orange hover-bg-sgs-orange text-white px-8 py-3 rounded font-bold transition inline-block shadow-md">Contact Us</a>
+                       </div>
+                       <div class="w-full md:w-1/2">
+                           <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1000&auto=format&fit=crop" alt="Quality Audits Services" class="w-full h-[450px] object-cover rounded shadow-lg border border-gray-100">
+                       </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-16">
+                        <div class="text-center mb-12">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Service</h2>
+                            <p class="text-gray-600 max-w-2xl mx-auto">Explore our wide range of services tailored to ensure your management systems meet the highest global standards.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div onclick="showPage('certification')" class="bg-gray-50 border border-gray-100 p-8 rounded hover:shadow-lg hover:border-sgs-orange transition group cursor-pointer flex flex-col items-center text-center">
+                                <div class="w-16 h-16 bg-white border border-gray-200 text-sgs-orange flex items-center justify-center rounded-full mb-6 group-hover:bg-sgs-orange group-hover:text-white group-hover:border-transparent transition shadow-sm">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-sgs-orange transition">Certification</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Demonstrate that your products, processes, systems or services are compliant with national and international regulations and standards.</p>
+                            </div>
+                            
+                            <div onclick="showPage('quality-audits')" class="bg-gray-50 border border-gray-100 p-8 rounded hover:shadow-lg hover:border-sgs-orange transition group cursor-pointer flex flex-col items-center text-center">
+                                <div class="w-16 h-16 bg-white border border-gray-200 text-sgs-orange flex items-center justify-center rounded-full mb-6 group-hover:bg-sgs-orange group-hover:text-white group-hover:border-transparent transition shadow-sm">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-sgs-orange transition">Quality Audits</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Ensure your operations meet rigorous quality standards through our comprehensive and independent auditing solutions.</p>
+                            </div>
+                            
+                            <div onclick="showPage('supply-chain')" class="bg-gray-50 border border-gray-100 p-8 rounded hover:shadow-lg hover:border-sgs-orange transition group cursor-pointer flex flex-col items-center text-center">
+                                <div class="w-16 h-16 bg-white border border-gray-200 text-sgs-orange flex items-center justify-center rounded-full mb-6 group-hover:bg-sgs-orange group-hover:text-white group-hover:border-transparent transition shadow-sm">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-sgs-orange transition">Supply Chain Assurance</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Mitigate risk, enhance transparency, and build resilience across your entire supply chain with our assurance programs.</p>
+                            </div>
+                        </div>
+                    </div>
+           </section>
+        </div>
+<div id="page-supply-chain" class="hidden">
+            <div class="bg-gray-100 py-3 border-b border-gray-200">
+               <div class="container mx-auto px-6 text-sm text-gray-500">
+                   <a href="#" onclick="showPage('home')" class="hover:text-sgs-orange">Home</a> / 
+                   <span class="text-gray-800">Service</span> / 
+                   <span class="text-gray-800 font-semibold">Supply Chain Assurance</span>
+               </div>
+           </div>
+
+           <section class="py-16 bg-white">
+               <div class="container mx-auto px-6 max-w-6xl">
+                    <div class="flex flex-col md:flex-row gap-12 mb-20 items-center">
+                       <div class="w-full md:w-1/2">
+                           <h1 class="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">Supply Chain Assurance</h1>
+                           <div class="h-1 w-20 bg-sgs-orange mb-6"></div>
+                           <p class="text-gray-800 font-medium mb-6 leading-relaxed text-xl">
+                               Mitigate risk, enhance transparency, and build resilience across your entire supply chain.
+                           </p>
+                           <p class="text-gray-600 mb-8 leading-relaxed">
+                               Our supply chain assurance solutions provide you with the visibility and control needed to ensure compliance, ethical sourcing, and operational excellence. From risk assessments to customized audit programs, we help you protect your brand and foster sustainable growth.
+                           </p>
+                           <a href="#" onclick="showPage('contact')" class="bg-sgs-orange hover-bg-sgs-orange text-white px-8 py-3 rounded font-bold transition inline-block shadow-md">Contact Us</a>
+                       </div>
+                       <div class="w-full md:w-1/2">
+                           <img src="https://imgix-prod.sgs.com/-/jssmedia/sgscorp/images/business-assurance/cargo-containers-for-overseas-shipping-in-shipyard-clip.cdn.en-VN.1.jpg?fit=clip&auto=format&w=1600&h=640" alt="Supply Chain Assurance" class="w-full h-[450px] object-cover rounded shadow-lg border border-gray-100">
+                       </div>
+                    </div>
+
+                    <div class="border-t border-gray-200 pt-16">
+                        <div class="text-center mb-12">
+                            <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Service</h2>
+                            <p class="text-gray-600 max-w-2xl mx-auto">Explore our wide range of services tailored to ensure your management systems meet the highest global standards.</p>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                            <div onclick="showPage('certification')" class="bg-gray-50 border border-gray-100 p-8 rounded hover:shadow-lg hover:border-sgs-orange transition group cursor-pointer flex flex-col items-center text-center">
+                                <div class="w-16 h-16 bg-white border border-gray-200 text-sgs-orange flex items-center justify-center rounded-full mb-6 group-hover:bg-sgs-orange group-hover:text-white group-hover:border-transparent transition shadow-sm">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-sgs-orange transition">Certification</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Demonstrate that your products, processes, systems or services are compliant with national and international regulations and standards.</p>
+                            </div>
+                            
+                            <div onclick="showPage('quality-audits')" class="bg-gray-50 border border-gray-100 p-8 rounded hover:shadow-lg hover:border-sgs-orange transition group cursor-pointer flex flex-col items-center text-center">
+                                <div class="w-16 h-16 bg-white border border-gray-200 text-sgs-orange flex items-center justify-center rounded-full mb-6 group-hover:bg-sgs-orange group-hover:text-white group-hover:border-transparent transition shadow-sm">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-sgs-orange transition">Quality Audits</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Ensure your operations meet rigorous quality standards through our comprehensive and independent auditing solutions.</p>
+                            </div>
+                            
+                            <div onclick="showPage('supply-chain')" class="bg-gray-50 border border-gray-100 p-8 rounded hover:shadow-lg hover:border-sgs-orange transition group cursor-pointer flex flex-col items-center text-center">
+                                <div class="w-16 h-16 bg-white border border-gray-200 text-sgs-orange flex items-center justify-center rounded-full mb-6 group-hover:bg-sgs-orange group-hover:text-white group-hover:border-transparent transition shadow-sm">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3 group-hover:text-sgs-orange transition">Supply Chain Assurance</h3>
+                                <p class="text-gray-600 text-sm leading-relaxed">Mitigate risk, enhance transparency, and build resilience across your entire supply chain with our assurance programs.</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </section>
+        </div>
 </main>
  
     <footer class="bg-gray-900 text-gray-400 py-12 border-t-4 border-sgs-orange mt-12">
@@ -2989,49 +3185,36 @@
  
     <script>
         function showPage(pageId) {
-            // Ẩn tất cả các trang
-           document.getElementById('page-home').classList.add('hidden');
-           document.getElementById('page-classification').classList.add('hidden');
-           document.getElementById('page-ventilated').classList.add('hidden');
-           document.getElementById('page-dustproof').classList.add('hidden');
-          document.getElementById('page-uncertified').classList.add('hidden');
-          document.getElementById('page-weather').classList.add('hidden');
-          document.getElementById('page-foodgrade').classList.add('hidden');
-          document.getElementById('page-sling').classList.add('hidden');
-          document.getElementById('page-dewatering').classList.add('hidden');
-         document.getElementById('page-baffle').classList.add('hidden');
-         document.getElementById('page-qbag').classList.add('hidden');
-         document.getElementById('page-netbaffle').classList.add('hidden');
-         document.getElementById('page-contact').classList.add('hidden');
+            // 1. Tự động tìm tất cả các thẻ có ID bắt đầu bằng "page-" và ẩn đi (Không cần liệt kê thủ công nữa)
+            const allPages = document.querySelectorAll('[id^="page-"]');
+            allPages.forEach(page => {
+                page.classList.add('hidden');
+            });
 
-          // Chuẩn bị cho các trang sắp tới (tránh lỗi Javascript nếu thẻ ID chưa tồn tại)
-          if(document.getElementById('page-baffle')) document.getElementById('page-baffle').classList.add('hidden');
-          if(document.getElementById('page-qbag')) document.getElementById('page-qbag').classList.add('hidden');
-          if(document.getElementById('page-netbaffle')) document.getElementById('page-netbaffle').classList.add('hidden');
-          
-// Hiện trang được chọn
-           // Kiểm tra xem ID trang có tồn tại không trước khi hiển thị (phòng trường hợp click vào nút của trang chưa tạo)
-           if (document.getElementById('page-' + pageId)) {
-               document.getElementById('page-' + pageId).classList.remove('hidden');
-               
-               // Đánh thức tất cả các thanh trượt khi chuyển trang
-               setTimeout(() => {
-                   window.dispatchEvent(new Event('resize'));
-               }, 100);
-           }            
-            // Cuộn lên đầu
-           window.scrollTo({ top: 0, behavior: 'smooth' });
+            // 2. Hiện trang được click chọn
+            const selectedPage = document.getElementById('page-' + pageId);
+            if (selectedPage) {
+                selectedPage.classList.remove('hidden');
+                
+                // Đánh thức tất cả các thanh trượt khi chuyển trang
+                setTimeout(() => {
+                    window.dispatchEvent(new Event('resize'));
+                }, 100);
+            }            
             
-            // Cập nhật class active (màu cam) trên menu
-            let navLinks = document.querySelectorAll('.nav-link');
-           navLinks.forEach(link => {
-               link.classList.remove('text-sgs-orange');
-               if(link.innerText.toLowerCase() === pageId) {
-                   link.classList.add('text-sgs-orange');
+            // 3. Cuộn lên đầu trang mượt mà
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            
+            // 4. Cập nhật màu cam cho menu đang được chọn
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.classList.remove('text-sgs-orange');
+                // Quét thông minh lệnh onclick để bôi màu chính xác nút menu
+                if(link.getAttribute('onclick') && link.getAttribute('onclick').includes("'" + pageId + "'")) {
+                    link.classList.add('text-sgs-orange');
                 }
             });
-        }
- 
+        } 
         function changeImage(src) {
            document.getElementById('main-product-image').src = src;
             let thumbnails = document.querySelectorAll('.thumbnail');
